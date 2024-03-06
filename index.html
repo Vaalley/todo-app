@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ToDo List App</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="app-container">
+			<h2>Ajouter une ToDo</h2>
+			<form id="addTodoForm">
+				<input type="text" id="title" placeholder="Title" required />
+				<input
+					type="text"
+					id="description"
+					placeholder="Description"
+					required
+				/>
+				<input type="date" id="dueDate" required />
+				<select id="priority" required>
+					<option value="High">Haute</option>
+					<option value="Medium">Moyenne</option>
+					<option value="Low">Basse</option>
+				</select>
+				<button type="submit">Ajouter</button>
+			</form>
+
+			<input type="text" id="filter" placeholder="Filtrer les Todos" />
+
+			<ul id="todoList"></ul>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
